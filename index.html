@@ -4,53 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jacqui Helen Minchola - Tu Asesora Patrimonial</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <!-- Fuente de Google -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <!-- Iconos para las redes sociales -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- Tu archivo de estilos CSS -->
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 
     <div class="card-container">
+        
+        <!-- ENCABEZADO: Imagen de mapa mundial de fondo -->
         <header class="card-header">
             <div class="header-bg">
-                <img src="fondo-mapa.jpg" alt="Fondo de mapa mundial">
+                <!-- Ajusta el nombre si tu archivo tiene otra extensión (ej: .png o .jpeg) -->
+                <img src="./imagenes/fondo.jpg" alt="Fondo de mapa mundial">
             </div>
+            <!-- FOTO DE PERFIL: Tu foto centrada -->
             <div class="profile-pic-container">
-                <img src="jacqui-helen.jpg" alt="Jacqui Helen Minchola" class="profile-pic">
+                <img src="./imagenes/perfil.jpg" alt="Jacqui Helen Minchola" class="profile-pic">
             </div>
         </header>
 
+        <!-- INFORMACIÓN PRINCIPAL -->
         <section class="profile-info">
-            <h1>JACQUELINE<br> HELEN<br>MINCHOLA</h1>
+            <h1>JACQUELINE HELEN MINCHOLA</h1>
             <p class="subtitle">SEGUROS E INVERSIONES</p>
         </section>
 
-        <section class="main-action">
-            <a href="https://wa.me/TU_NUMERO_DE_TELEFONO?text=Hola,%20quiero%20agendar%20una%20cita%20gratuita." target="_blank" class="btn-primary">
-                AGENDAR CITA GRATUITA
-            </a>
-        </section>
+        <!-- BOTÓN DE ACCIÓN PRINCIPAL -->
+        <div class="main-action">
+            <a href="https://calendly.com" target="_blank" class="btn-primary">AGENDAR CITA GRATUITA</a>
+        </div>
 
+        <!-- ENLACES A REDES SOCIALES -->
         <nav class="social-links">
-            <a href="https://www.linkedin.com/in/TU_PERFIL" target="_blank" class="link-item">
-                <span class="icon-box"><i class="fab fa-linkedin-in"></i></span>
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com" target="_blank" class="link-item">
+                <div class="icon-box"><i class="fa-brands fa-linkedin-in"></i></div>
                 <span class="link-text">LINKEDIN</span>
             </a>
-            <a href="https://www.instagram.com/JACQUIHELEN_AF" target="_blank" class="link-item">
-                <span class="icon-box"><i class="fab fa-instagram"></i></span>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" class="link-item">
+                <div class="icon-box"><i class="fa-brands fa-instagram"></i></div>
                 <span class="link-text">INSTAGRAM</span>
             </a>
-            <a href="https://www.facebook.com/100064883567557/" target="_blank" class="link-item">
-                <span class="icon-box"><i class="fab fa-facebook-f"></i></span>
+
+            <!-- Facebook -->
+            <a href="https://facebook.com" target="_blank" class="link-item">
+                <div class="icon-box"><i class="fa-brands fa-facebook-f"></i></div>
                 <span class="link-text">FACEBOOK</span>
             </a>
         </nav>
 
+        <!-- PIE DE PÁGINA: Tu Logotipo corporativo -->
         <footer class="card-footer">
-            <img src="logo-asesora.png" alt="Tu Asesora Patrimonial Logo" class="footer-logo">
+            <img src="./imagenes/logo.png" alt="Tu Asesora Patrimonial Logo" class="footer-logo">
         </footer>
+
     </div>
 
 </body>
