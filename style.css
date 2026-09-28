@@ -79,18 +79,18 @@ body {
 } 
 
 /* ========================================================================== 
-   SECCIÓN DE INFORMACIÓN Y TIPOGRAFÍA (MODIFICADA) 
+   SECCIÓN DE INFORMACIÓN Y TIPOGRAFÍA 
    ========================================================================== */ 
 .profile-info { 
     text-align: center; 
     padding: 0 20px; 
-    margin-bottom: 15px; /* Reducido ligeramente para dar espacio a la reseña */
+    margin-bottom: 15px; 
     width: 100%;
 } 
 
-/* Fuerza al nombre completo a quedarse en una sola línea de forma fluida */
+/* Nombre completo en una sola línea */
 .profile-info .single-line-name { 
-    font-size: 5.4vw; /* Escala automáticamente en celulares */ 
+    font-size: 5.4vw; 
     color: #2b2c30; 
     font-weight: 700; 
     letter-spacing: 1px; 
@@ -107,15 +107,15 @@ body {
     color: #57585c; 
     font-weight: 600; 
     letter-spacing: 1.2px; 
-    margin-bottom: 12px; /* Espacio antes de la reseña */
+    margin-bottom: 12px; 
 } 
 
-/* Nueva clase para tu reseña personal en gris oscuro */
+/* Reseña personal en gris oscuro */
 .profile-info .profile-bio {
     font-size: 0.8rem;
-    color: #4A4A4A; /* El gris oscuro solicitado */
-    font-weight: 500;
-    line-height: 1.4;
+    color: #4A4A4A; 
+    font-weight: 500; 
+    line-height: 1.4; 
     max-width: 90%;
     margin: 0 auto;
     text-align: center;
@@ -157,7 +157,7 @@ body {
 } 
 
 /* ========================================================================== 
-   ENLACES DE REDES SOCIALES 
+   ENLACES DE REDES SOCIALES (LOGOS CORREGIDOS) 
    ========================================================================== */ 
 .social-links { 
     width: 100%; 
@@ -188,9 +188,16 @@ body {
     display: flex; 
     justify-content: center; 
     align-items: center; 
-    font-size: 1rem; 
     transition: background-color 0.3s ease; 
+    flex-shrink: 0; /* Evita que el círculo del icono se deforme */
 } 
+
+/* Corrección de compatibilidad con Font Awesome */
+.icon-box i {
+    font-size: 1rem; 
+    display: inline-block;
+    line-height: 1;
+}
 
 .link-text { 
     flex: 1; 
@@ -231,7 +238,7 @@ body {
 } 
 
 /* ========================================================================== 
-   RESPONSIVIDAD (OPTIMIZACIÓN PARA PANTALLAS FIJAS O MÓVILES) 
+   RESPONSIVIDAD 
    ========================================================================== */ 
 @media (max-width: 480px) { 
     body { 
@@ -249,7 +256,6 @@ body {
     } 
 }
 
-/* Evita que el nombre crezca infinitamente en computadoras o pantallas medianas */
 @media (min-width: 410px) {
     .profile-info .single-line-name {
         font-size: 22px; 
