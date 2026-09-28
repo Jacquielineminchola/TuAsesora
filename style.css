@@ -94,12 +94,12 @@ body {
     color: #2b2c30; 
     font-weight: 700; 
     letter-spacing: 1px; 
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
     margin-bottom: 6px; 
-    width: 100%;
-    display: block;
+    width: 100%; 
+    display: block; 
 } 
 
 .subtitle { 
@@ -111,14 +111,14 @@ body {
 } 
 
 /* Reseña personal en gris oscuro */
-.profile-info .profile-bio {
-    font-size: 0.8rem;
+.profile-info .profile-bio { 
+    font-size: 0.8rem; 
     color: #4A4A4A; 
     font-weight: 500; 
     line-height: 1.4; 
-    max-width: 90%;
-    margin: 0 auto;
-    text-align: center;
+    max-width: 90%; 
+    margin: 0 auto; 
+    text-align: center; 
 } 
 
 /* ========================================================================== 
@@ -165,7 +165,7 @@ body {
     display: flex; 
     flex-direction: column; 
     gap: 12px; 
-    margin-bottom: 25px; /* Espacio base estable con respecto al logo inferior */
+    margin-bottom: 25px; 
 } 
 
 .link-item { 
@@ -192,7 +192,7 @@ body {
     flex-shrink: 0; 
 } 
 
-.icon-box i {
+.icon-box i { 
     font-size: 1.2rem; 
     display: inline-block; 
     line-height: 1; 
@@ -220,19 +220,19 @@ body {
 } 
 
 /* ========================================================================== 
-   PIE DE PÁGINA (UBICADO DE FORMA INMEDIATA ABAJO DE LAS REDES SOCIALES) 
+   PIE DE PÁGINA (CON TAMAÑO ENFATIZADO Y MÁXIMA AMPLITUD) 
    ========================================================================== */ 
 .card-footer { 
     width: 100%; 
     display: flex; 
     justify-content: center; 
-    margin-top: 5px; /* Quita el comportamiento 'auto' para que se posicione directamente debajo */
+    margin-top: 5px; 
     padding: 10px 0; 
 } 
 
 .footer-logo { 
-    max-width: 165px; /* Tamaño grande y destacado */
-    width: 100%;
+    max-width: 240px; /* ¡NUEVO! Aumentado para que el logo sea significativamente más grande */ 
+    width: 100%; 
     height: auto; 
     object-fit: contain; 
     opacity: 0.95; 
@@ -258,9 +258,9 @@ body {
     .profile-info { 
         padding-top: 45px; 
     } 
-    .card-footer {
-        margin-top: 10px; /* Consistencia de posición debajo de los botones en móviles */
-    }
+    .card-footer { 
+        margin-top: 10px; 
+    } 
 } 
 
 @media (min-width: 410px) { 
