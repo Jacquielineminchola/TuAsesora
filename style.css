@@ -31,7 +31,7 @@ body {
     display: flex; 
     flex-direction: column; 
     align-items: center; 
-    padding-bottom: 20px; 
+    padding-bottom: 25px; 
     position: relative; 
 } 
 
@@ -42,7 +42,7 @@ body {
     position: relative; 
     width: 100%; 
     height: 160px; 
-    margin-bottom: 45px; /* Margen base controlado */
+    margin-bottom: 45px; 
 } 
 
 .header-bg { 
@@ -79,11 +79,11 @@ body {
 } 
 
 /* ========================================================================== 
-   SECCIÓN DE INFORMACIÓN Y TIPOGRAFÍA (CAMBIO CLAVE PARA EMPUJAR ABAJO) 
+   SECCIÓN DE INFORMACIÓN Y TIPOGRAFÍA 
    ========================================================================== */ 
 .profile-info { 
     text-align: center; 
-    padding: 50px 20px 0 20px; /* ¡NUEVO! 50px de relleno arriba fuerza a todo a bajar */
+    padding: 50px 20px 0 20px; 
     margin-bottom: 15px; 
     width: 100%;
 } 
@@ -165,7 +165,7 @@ body {
     display: flex; 
     flex-direction: column; 
     gap: 12px; 
-    margin-bottom: 20px; 
+    margin-bottom: 25px; /* Espacio base estable con respecto al logo inferior */
 } 
 
 .link-item { 
@@ -220,21 +220,22 @@ body {
 } 
 
 /* ========================================================================== 
-   PIE DE PÁGINA 
+   PIE DE PÁGINA (UBICADO DE FORMA INMEDIATA ABAJO DE LAS REDES SOCIALES) 
    ========================================================================== */ 
 .card-footer { 
     width: 100%; 
     display: flex; 
     justify-content: center; 
-    margin-top: auto; 
-    padding-top: 5px; 
+    margin-top: 5px; /* Quita el comportamiento 'auto' para que se posicione directamente debajo */
+    padding: 10px 0; 
 } 
 
 .footer-logo { 
-    max-width: 110px; 
+    max-width: 165px; /* Tamaño grande y destacado */
+    width: 100%;
     height: auto; 
     object-fit: contain; 
-    opacity: 0.9; 
+    opacity: 0.95; 
 } 
 
 /* ========================================================================== 
@@ -248,19 +249,22 @@ body {
         max-width: 100%; 
         min-height: 100vh; 
         border-radius: 0; 
-        padding-bottom: 25px; 
+        padding-bottom: 30px; 
     } 
     .card-header { 
         height: 150px; 
         margin-bottom: 40px; 
     } 
     .profile-info { 
-        padding-top: 45px; /* Forzado de desplazamiento en teléfonos móvil */
+        padding-top: 45px; 
     } 
+    .card-footer {
+        margin-top: 10px; /* Consistencia de posición debajo de los botones en móviles */
+    }
 } 
 
 @media (min-width: 410px) { 
     .profile-info .single-line-name { 
         font-size: 22px; 
     } 
-   }
+}
