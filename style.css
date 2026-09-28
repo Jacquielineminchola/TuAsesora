@@ -157,7 +157,7 @@ body {
 } 
 
 /* ========================================================================== 
-   ENLACES DE REDES SOCIALES (LOGOS CORREGIDOS) 
+   ENLACES DE REDES SOCIALES (ESTILO REDONDEADO DE TU IMAGEN) 
    ========================================================================== */ 
 .social-links { 
     width: 100%; 
@@ -175,26 +175,26 @@ body {
     background-color: #d8dadf; 
     border: 1px solid #c2c4cc; 
     text-decoration: none; 
-    border-radius: 30px; 
+    border-radius: 30px; /* Bordes totalmente redondeados */
     overflow: hidden; 
+    height: 48px; /* Altura fija para mantener proporción uniforme */
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); 
 } 
 
 .icon-box { 
     background-color: #92949c; 
     color: #ffffff; 
-    width: 40px; 
-    height: 40px; 
+    width: 54px; /* Ancho idóneo para alojar la curva izquierda */
+    height: 100%; 
     display: flex; 
     justify-content: center; 
     align-items: center; 
     transition: background-color 0.3s ease; 
-    flex-shrink: 0; /* Evita que el círculo del icono se deforme */
+    flex-shrink: 0; 
 } 
 
-/* Corrección de compatibilidad con Font Awesome */
 .icon-box i {
-    font-size: 1rem; 
+    font-size: 1.15rem; /* Tamaño de los iconos como los tenías inicialmente */
     display: inline-block;
     line-height: 1;
 }
@@ -206,7 +206,7 @@ body {
     font-weight: 600; 
     font-size: 0.75rem; 
     letter-spacing: 1.2px; 
-    padding-right: 40px; 
+    padding-right: 54px; /* Centrado perfecto compensando el icon-box */
 } 
 
 .link-item:hover { 
