@@ -36,13 +36,13 @@ body {
 } 
 
 /* ========================================================================== 
-   CABECERA Y FOTO DE PERFIL 
+   CABECERA Y FOTO DE PERFIL (MODIFICADO PARA BAJAR TODO EL CONTENIDO) 
    ========================================================================== */ 
 .card-header { 
     position: relative; 
     width: 100%; 
     height: 160px; 
-    margin-bottom: 50px; 
+    margin-bottom: 95px; /* Empuja el título, reseña y botones hacia abajo */
 } 
 
 .header-bg { 
@@ -119,7 +119,7 @@ body {
     max-width: 90%;
     margin: 0 auto;
     text-align: center;
-}
+} 
 
 /* ========================================================================== 
    BOTÓN PRINCIPAL DE ACCIÓN 
@@ -157,7 +157,7 @@ body {
 } 
 
 /* ========================================================================== 
-   ENLACES DE REDES SOCIALES (ESTILO REDONDEADO DE TU IMAGEN) 
+   ENLACES DE REDES SOCIALES (ESTILO LIMPIO E INTEGRADO) 
    ========================================================================== */ 
 .social-links { 
     width: 100%; 
@@ -175,29 +175,28 @@ body {
     background-color: #d8dadf; 
     border: 1px solid #c2c4cc; 
     text-decoration: none; 
-    border-radius: 30px; /* Bordes totalmente redondeados */
+    border-radius: 30px; 
     overflow: hidden; 
-    height: 48px; /* Altura fija para mantener proporción uniforme */
+    padding: 12px 24px; 
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); 
 } 
 
 .icon-box { 
-    background-color: #92949c; 
-    color: #ffffff; 
-    width: 54px; /* Ancho idóneo para alojar la curva izquierda */
-    height: 100%; 
+    background-color: transparent !important; 
+    color: #38393d; 
+    width: auto; 
+    height: auto; 
     display: flex; 
     justify-content: center; 
     align-items: center; 
-    transition: background-color 0.3s ease; 
     flex-shrink: 0; 
 } 
 
 .icon-box i {
-    font-size: 1.15rem; /* Tamaño de los iconos como los tenías inicialmente */
-    display: inline-block;
-    line-height: 1;
-}
+    font-size: 1.2rem; 
+    display: inline-block; 
+    line-height: 1; 
+} 
 
 .link-text { 
     flex: 1; 
@@ -206,7 +205,7 @@ body {
     font-weight: 600; 
     font-size: 0.75rem; 
     letter-spacing: 1.2px; 
-    padding-right: 54px; /* Centrado perfecto compensando el icon-box */
+    padding-right: 20px; 
 } 
 
 .link-item:hover { 
@@ -215,8 +214,9 @@ body {
     border-color: #a493b8; 
 } 
 
+.link-item:hover .link-text, 
 .link-item:hover .icon-box { 
-    background-color: #a493b8; 
+    color: #a493b8; 
 } 
 
 /* ========================================================================== 
@@ -238,7 +238,7 @@ body {
 } 
 
 /* ========================================================================== 
-   RESPONSIVIDAD 
+   RESPONSIVIDAD (MODIFICADO PARA PANTALLAS MÓVILES) 
    ========================================================================== */ 
 @media (max-width: 480px) { 
     body { 
@@ -252,12 +252,12 @@ body {
     } 
     .card-header { 
         height: 150px; 
-        margin-bottom: 45px; 
+        margin-bottom: 90px; /* Desplaza todo hacia abajo también en móviles */
     } 
-}
+} 
 
-@media (min-width: 410px) {
-    .profile-info .single-line-name {
+@media (min-width: 410px) { 
+    .profile-info .single-line-name { 
         font-size: 22px; 
-    }
+    } 
 }
