@@ -31,7 +31,7 @@ body {
     display: flex; 
     flex-direction: column; 
     align-items: center; 
-    padding-bottom: 25px; 
+    padding-bottom: 20px; 
     position: relative; 
 } 
 
@@ -157,7 +157,7 @@ body {
 } 
 
 /* ========================================================================== 
-   ENLACES DE REDES SOCIALES 
+   ENLACES DE REDES SOCIALES (SISTEMA GRID PARA CENTRADO ABSOLUTO) 
    ========================================================================== */ 
 .social-links { 
     width: 100%; 
@@ -169,7 +169,8 @@ body {
 } 
 
 .link-item { 
-    display: flex; 
+    display: grid; 
+    grid-template-columns: 40px 1fr 40px; /* 3 columnas: icono, texto centrado, espacio invisible */
     align-items: center; 
     width: 100%; 
     background-color: #d8dadf; 
@@ -177,19 +178,18 @@ body {
     text-decoration: none; 
     border-radius: 30px; 
     overflow: hidden; 
-    padding: 12px 24px; 
+    padding: 12px 0; /* Relleno superior/inferior controlado */
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); 
 } 
 
+/* Ubica y centra el icono en la primera columna */
 .icon-box { 
     background-color: transparent !important; 
     color: #38393d; 
-    width: auto; 
-    height: auto; 
     display: flex; 
     justify-content: center; 
     align-items: center; 
-    flex-shrink: 0; 
+    grid-column: 1; 
 } 
 
 .icon-box i { 
@@ -198,14 +198,16 @@ body {
     line-height: 1; 
 } 
 
+/* Ubica y centra matemáticamente el texto en la columna del medio */
 .link-text { 
-    flex: 1; 
+    grid-column: 2; 
     text-align: center; 
     color: #38393d; 
     font-weight: 600; 
     font-size: 0.75rem; 
     letter-spacing: 1.2px; 
-    padding-right: 20px; 
+    padding: 0; 
+    margin: 0;
 } 
 
 .link-item:hover { 
@@ -220,22 +222,22 @@ body {
 } 
 
 /* ========================================================================== 
-   PIE DE PÁGINA (CON TAMAÑO ENFATIZADO Y MÁXIMA AMPLITUD) 
+   PIE DE PÁGINA 
    ========================================================================== */ 
 .card-footer { 
     width: 100%; 
     display: flex; 
     justify-content: center; 
-    margin-top: 5px; 
-    padding: 10px 0; 
+    margin-top: auto; 
+    padding-top: 5px; 
 } 
 
 .footer-logo { 
-    max-width: 240px; /* ¡NUEVO! Aumentado para que el logo sea significativamente más grande */ 
+    max-width: 120px; 
     width: 100%; 
     height: auto; 
     object-fit: contain; 
-    opacity: 0.95; 
+    opacity: 0.9; 
 } 
 
 /* ========================================================================== 
@@ -249,7 +251,7 @@ body {
         max-width: 100%; 
         min-height: 100vh; 
         border-radius: 0; 
-        padding-bottom: 30px; 
+        padding-bottom: 25px; 
     } 
     .card-header { 
         height: 150px; 
@@ -257,9 +259,6 @@ body {
     } 
     .profile-info { 
         padding-top: 45px; 
-    } 
-    .card-footer { 
-        margin-top: 10px; 
     } 
 } 
 
