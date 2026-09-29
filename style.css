@@ -31,7 +31,7 @@ body {
     display: flex; 
     flex-direction: column; 
     align-items: center; 
-    padding-bottom: 20px; 
+    padding-bottom: 30px; /* Espacio cómodo al final de la tarjeta */
     position: relative; 
 } 
 
@@ -157,7 +157,7 @@ body {
 } 
 
 /* ========================================================================== 
-   ENLACES DE REDES SOCIALES (SISTEMA GRID PARA CENTRADO ABSOLUTO) 
+   ENLACES DE REDES SOCIALES 
    ========================================================================== */ 
 .social-links { 
     width: 100%; 
@@ -165,12 +165,12 @@ body {
     display: flex; 
     flex-direction: column; 
     gap: 12px; 
-    margin-bottom: 25px; 
+    margin-bottom: 20px; /* Reducido espacio para acercarlo al logo */
 } 
 
 .link-item { 
     display: grid; 
-    grid-template-columns: 40px 1fr 40px; /* 3 columnas: icono, texto centrado, espacio invisible */
+    grid-template-columns: 40px 1fr 40px; 
     align-items: center; 
     width: 100%; 
     background-color: #d8dadf; 
@@ -178,11 +178,10 @@ body {
     text-decoration: none; 
     border-radius: 30px; 
     overflow: hidden; 
-    padding: 12px 0; /* Relleno superior/inferior controlado */
+    padding: 12px 0; 
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); 
 } 
 
-/* Ubica y centra el icono en la primera columna */
 .icon-box { 
     background-color: transparent !important; 
     color: #38393d; 
@@ -198,7 +197,6 @@ body {
     line-height: 1; 
 } 
 
-/* Ubica y centra matemáticamente el texto en la columna del medio */
 .link-text { 
     grid-column: 2; 
     text-align: center; 
@@ -222,18 +220,17 @@ body {
 } 
 
 /* ========================================================================== 
-   PIE DE PÁGINA 
+   NUEVA SECCIÓN DE LOGO (UBICADO DE FORMA NATURAL DESPUÉS DE LAS REDES)
    ========================================================================== */ 
-.card-footer { 
+.brand-logo-section { 
     width: 100%; 
     display: flex; 
     justify-content: center; 
-    margin-top: auto; 
-    padding-top: 5px; 
+    padding-top: 10px; /* Espaciado idóneo directo debajo de los botones */
 } 
 
 .footer-logo { 
-    max-width: 120px; 
+    max-width: 120px; /* Tamaño original restaurado */ 
     width: 100%; 
     height: auto; 
     object-fit: contain; 
@@ -251,7 +248,7 @@ body {
         max-width: 100%; 
         min-height: 100vh; 
         border-radius: 0; 
-        padding-bottom: 25px; 
+        padding-bottom: 30px; 
     } 
     .card-header { 
         height: 150px; 
