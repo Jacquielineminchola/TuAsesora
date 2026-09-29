@@ -31,7 +31,7 @@ body {
     display: flex; 
     flex-direction: column; 
     align-items: center; 
-    padding-bottom: 30px; /* Espacio cómodo al final de la tarjeta */
+    padding-bottom: 35px; /* Espacio extra cómodo al final para el logo grande */
     position: relative; 
 } 
 
@@ -165,7 +165,7 @@ body {
     display: flex; 
     flex-direction: column; 
     gap: 12px; 
-    margin-bottom: 20px; /* Reducido espacio para acercarlo al logo */
+    margin-bottom: 25px; 
 } 
 
 .link-item { 
@@ -205,7 +205,7 @@ body {
     font-size: 0.75rem; 
     letter-spacing: 1.2px; 
     padding: 0; 
-    margin: 0;
+    margin: 0; 
 } 
 
 .link-item:hover { 
@@ -220,21 +220,21 @@ body {
 } 
 
 /* ========================================================================== 
-   NUEVA SECCIÓN DE LOGO (UBICADO DE FORMA NATURAL DESPUÉS DE LAS REDES)
+   SECCIÓN DE LOGO AGRANDADO (UBICADO DE FORMA NATURAL TRAS LAS REDES) 
    ========================================================================== */ 
 .brand-logo-section { 
     width: 100%; 
     display: flex; 
     justify-content: center; 
-    padding-top: 10px; /* Espaciado idóneo directo debajo de los botones */
+    padding: 15px 35px 5px 35px; /* Controla la separación superior e inferior */
 } 
 
 .footer-logo { 
-    max-width: 120px; /* Tamaño original restaurado */ 
-    width: 100%; 
-    height: auto; 
+    max-width: 210px !important; /* ¡NUEVO! Aumentado significativamente para mayor presencia visual */ 
+    width: 100% !important; 
+    height: auto !important; 
     object-fit: contain; 
-    opacity: 0.9; 
+    opacity: 0.95; 
 } 
 
 /* ========================================================================== 
@@ -248,7 +248,7 @@ body {
         max-width: 100%; 
         min-height: 100vh; 
         border-radius: 0; 
-        padding-bottom: 30px; 
+        padding-bottom: 35px; 
     } 
     .card-header { 
         height: 150px; 
