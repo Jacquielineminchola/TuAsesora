@@ -1,3 +1,4 @@
+
 /* ========================================================================== 
    ESTILOS GENERALES Y CONFIGURACIÓN DE PÁGINA 
    ========================================================================== */ 
@@ -157,7 +158,7 @@ body {
 } 
 
 /* ========================================================================== 
-   ENLACES DE REDES SOCIALES (MÁXIMA CORRECCIÓN DE CENTRADO) 
+   ENLACES DE REDES SOCIALES (SISTEMA GRID PARA CENTRADO ABSOLUTO) 
    ========================================================================== */ 
 .social-links { 
     width: 100%; 
@@ -169,7 +170,8 @@ body {
 } 
 
 .link-item { 
-    display: flex; 
+    display: grid; 
+    grid-template-columns: 40px 1fr 40px; /* 3 columnas: icono, texto centrado, espacio invisible */
     align-items: center; 
     width: 100%; 
     background-color: #d8dadf; 
@@ -177,22 +179,18 @@ body {
     text-decoration: none; 
     border-radius: 30px; 
     overflow: hidden; 
-    padding: 12px 24px; 
-    position: relative; /* Base de posicionamiento */
+    padding: 12px 0; /* Relleno superior/inferior controlado */
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); 
 } 
 
-/* El icono flotará de forma limpia a la izquierda sin empujar al texto */
+/* Ubica y centra el icono en la primera columna */
 .icon-box { 
     background-color: transparent !important; 
     color: #38393d; 
-    width: auto; 
-    height: auto; 
     display: flex; 
     justify-content: center; 
     align-items: center; 
-    position: absolute;
-    left: 24px; /* Alineación milimétrica con respecto al borde curvo */
+    grid-column: 1; 
 } 
 
 .icon-box i { 
@@ -201,15 +199,16 @@ body {
     line-height: 1; 
 } 
 
-/* El texto ahora ocupa todo el ancho y se centra de manera absoluta */
+/* Ubica y centra matemáticamente el texto en la columna del medio */
 .link-text { 
-    flex: 1; 
+    grid-column: 2; 
     text-align: center; 
     color: #38393d; 
     font-weight: 600; 
     font-size: 0.75rem; 
     letter-spacing: 1.2px; 
-    padding-right: 0; /* Eliminado el desvío anterior para garantizar centrado puro */
+    padding: 0; 
+    margin: 0;
 } 
 
 .link-item:hover { 
